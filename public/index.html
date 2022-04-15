@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/final.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script>
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
@@ -46,9 +46,10 @@
               class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg  dark:shadow-slate-700 dark:shadow-md lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent dark:bg-dark lg:dark:shadow-none"
             >
               <ul class="block lg:flex">
-                <li  class="group">
+                <li class="group">
                   <a
                     href="#home"
+                    id="beranda"
                     class="text-base text-dark py-2 mx-8 flex hover:text-primary group-hover:text-primary dark:text-slate-100"
                     >Beranda</a
                   >
@@ -56,12 +57,14 @@
                 <li class="group">
                   <a
                     href="#about"
+                    id="tentang"
                     class="text-base text-dark py-2 mx-8 flex hover:text-primary group-hover:text-primary dark:text-slate-100"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
+                    id="portofolio"
                     href="#portfolio"
                     class="text-base text-dark py-2 mx-8 flex hover:text-primary group-hover:text-primary dark:text-slate-100"
                     >Portfolio</a
@@ -70,12 +73,14 @@
                  <li class="group">
                   <a
                     href="#clients"
+                    id="klien"
                     class="text-base text-dark py-2 mx-8 flex hover:text-primary group-hover:text-primary dark:text-slate-100"
                     >Clients</a
                   >
                 </li>
                 <li class="group">
                   <a
+                    id="blogku"
                     href="#blog"
                     class="text-base text-dark py-2 mx-8 flex hover:text-primary group-hover:text-primary dark:text-slate-100"
                     >Blog</a
@@ -83,6 +88,7 @@
                 </li>
                 <li class="group">
                   <a
+                    id="kontak"
                     href="#contact"
                     class="text-base text-dark py-2 mx-8 flex hover:text-primary group-hover:text-primary dark:text-slate-100 border-b-2 lg:border-none border-b-slate-300 dark:border-b-slate-800 lg:dark:border-none"
                     >Kontak</a

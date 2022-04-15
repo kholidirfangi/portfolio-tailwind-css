@@ -50,3 +50,67 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
   toggle.checked = false;
 }
+
+// Event Navbar when clicked
+const beranda = document.querySelector('#beranda');
+const tentang = document.querySelector('#tentang');
+const portofolio = document.querySelector('#portofolio');
+const blogku = document.querySelector('#blogku');
+const klien = document.querySelector('#klien');
+const kontak = document.querySelector('#kontak');
+
+beranda.addEventListener('click', function () {
+ beranda.classList.add('teal');
+ tentang.classList.remove('teal');
+ portofolio.classList.remove('teal');
+ blogku.classList.remove('teal');
+ klien.classList.remove('teal');
+ kontak.classList.remove('teal');
+});
+
+
+tentang.addEventListener('click', function () {
+ tentang.classList.add('teal');
+ beranda.classList.remove('teal');
+ portofolio.classList.remove('teal');
+ blogku.classList.remove('teal');
+ klien.classList.remove('teal');
+ kontak.classList.remove('teal');
+});
+
+portofolio.addEventListener('click', function () {
+ portofolio.classList.add('teal');
+ tentang.classList.remove('teal');
+ beranda.classList.remove('teal');
+ blogku.classList.remove('teal');
+ klien.classList.remove('teal');
+ kontak.classList.remove('teal');
+});
+
+blogku.addEventListener('click', function () {
+ blogku.classList.add('teal');
+ tentang.classList.remove('teal');
+ portofolio.classList.remove('teal');
+ beranda.classList.remove('teal');
+ klien.classList.remove('teal');
+ kontak.classList.remove('teal');
+});
+
+
+klien.addEventListener('click', function () {
+ klien.classList.add('teal');
+ tentang.classList.remove('teal');
+ portofolio.classList.remove('teal');
+ blogku.classList.remove('teal');
+ beranda.classList.remove('teal');
+ kontak.classList.remove('teal');
+});
+
+kontak.addEventListener('click', function () {
+ kontak.classList.add('teal');
+ tentang.classList.remove('teal');
+ portofolio.classList.remove('teal');
+ blogku.classList.remove('teal');
+ klien.classList.remove('teal');
+ beranda.classList.remove('teal');
+});
